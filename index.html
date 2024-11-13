@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.png" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Vivek Rabadiya</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-bar-chart navicon"></i> Skills</a></li> <!-- New Skills Menu Item -->
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li> 
+        <li><a href="#expertise"><i class="bi bi-images navicon"></i> Areas of Expertise</a></li>
+        <li><a href="#key-projects"><i class="bi bi-hdd-stack navicon"></i> Key Projects</a></li>
+        
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+    
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Vivek Rabadiya</h2>
+        <p>I'm <span id="typed-text"></span></p>
+      </div>
+      
+      <!-- Include Typed.js library -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      
+      <script>
+        // Initialize Typed.js
+        var typed = new Typed('#typed-text', {
+          strings: ['Software Developer'], // Text to be typed out
+          typeSpeed: 200, // Speed of typing
+          backSpeed: 50, // Speed of backspacing (optional if you need it to delete)
+          startDelay: 100, // Delay before typing starts
+          showCursor: true, // Show blinking cursor
+          cursorChar: '|', // Custom cursor character
+          loop: false // Set to true if you want it to loop
+        });
+      </script>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>I'm Vivek Rabadiya, a software engineer driven by a passion for leveraging machine learning and advanced analytics to solve real-world challenges. With a strong foundation from my Master’s in Computer Science and hands-on experience with organizations like CTI Consulting GmbH and the German Aerospace Centre (DLR), I specialize in building intelligent systems that enhance decision-making and efficiency.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Software Developer</h2>
+            <p class="fst-italic py-3">
+              
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>2 Jan 1996</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+49 176 4577 3763</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kassel, Germany</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>28</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vivekrabadiya54@gmail.com</span></li>
+      
+                </ul>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      </div><!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <p><b>Languages</b></p>
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Java</span> <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>SQL</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>C++</span> <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+        <br>
+        <p><b>Tools</b></p>
+        <div class="tools-list">
+          <span>• Visual Studio  </span>
+          <span>• Android Studio </span>
+          <span>• Unity  </span>
+          <span>• PyCharm  </span>
+        </div>
+        <br>
+        <br>
+        <p><b>Frameworks</b></p>
+        <div class="tools-list">
+          <span>• Pandas  </span>
+          <span>• Numpy </span>
+          <span>• Tensorflow </span>
+          <span>• NLP </span>
+          <span>• Matplotlib </span>
+          <span>• Scikit-learn </span>
+          <span>• OpenAI </span>
+          <span>• Baselines </span>
+          <span>• MongoDB </span>
+          <span>• Node.js </span>
+          <span>• Pyinstaller </span>
+            
+        </div>
+        <br>
+        <br>
+        <p><b>Other Technology</b></p>
+        <div class="tools-list">
+          <span>• Simulators: ROS Gazebo and SUMO  </span>
+          <span>• Big Data Technology: Hadoop and Spark</span>
+          <span>• Data Piplines </span>
+          <span>• Cloud: Google Cloud and AWS</span>
+          <span>• LeanIX </span>
+          <span>• Kubernetes </span>
+          <span>• Docker </span>
+          <span>• Git: GitLab and GitHub </span>
+          <span>• OS: Windows 10 and 11, Linux, Ubuntu </span>
+            
+        </div>
+
+
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science in Computer Science</h4>
+              <h5>Oct 2019 - March 2023</h5>
+              <p><em>Technical University of Clausthal, Clausthal-Zellerfeld, Germany</em></p>
+              <p>Majors: Data Analysis with Machine Learning, Computer Organization, Software System Engineering, Project
+                Management, Big Data, Aeronautical Information and Optimizations</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelors Engineering in Information Technology</h4>
+              <h5>June 2013 - May 2017</h5>
+              <p><em>Gujarat Technological University, Ahmedabad, IND</em></p>
+              <p>Majors: Object-Oriented System Design, Software Engineering & Testing, Digital Electronics, Database, Computer Network, Analysis & Design of Algorithms, System Software Design, Data Structure, Internet Fundamentals, and Web Technology.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+          
+            <!-- Software Engineer Experience -->
+            <div class="resume-item">
+              <h4>Software Engineer</h4>
+              <h5>March 2023 - Present</h5>
+              <p><em>CTI Consulting GmbH, Kassel, Germany</em></p>
+              <ul>
+                <li>Designed and developed software solutions to meet client specifications, enhancing system efficiency and performance.</li>
+                <li>Collaborated with cross-functional teams to integrate software applications into existing systems, ensuring seamless functionality.</li>
+                <li>Led technical discussions and decision-making processes to optimize project delivery, resulting in faster deployment times.</li>
+                <li>Monitored and assessed software performance metrics, identifying opportunities for improvement and overseeing updates.</li>
+              </ul>
+            </div><!-- End Software Engineer Item -->
+          
+            <!-- Machine Learning - Researcher Student Experience -->
+            <div class="resume-item">
+              <h4>Machine Learning - Researcher Student</h4>
+              <h5>November 2021 - July 2022</h5>
+              <p><em>DLR (German Aerospace Centre), Berlin, Germany</em></p>
+              <ul>
+                <li>Conducted research on machine learning algorithms, focusing on optimizing autonomous systems for aerospace applications.</li>
+                <li>Developed data processing pipelines and applied various ML models, leading to improved predictive accuracy in simulations.</li>
+                <li>Collaborated with interdisciplinary teams to analyze complex data sets, supporting the development of AI-powered solutions.</li>
+                <li>Authored detailed reports and presentations on research findings for senior researchers and project stakeholders.</li>
+              </ul>
+            </div><!-- End Machine Learning - Researcher Student Item -->
+          
+            <!-- Android Developer Experience -->
+            <div class="resume-item">
+              <h4>Android Developer</h4>
+              <h5>March 2018 - October 2019</h5>
+              <p><em>Winter Infotech, Surat, India</em></p>
+              <ul>
+                <li>Designed and built responsive Android applications focused on user experience and functionality.</li>
+                <li>Utilized Java and Android SDK to develop and debug mobile applications, implementing custom UI elements and animations.</li>
+                <li>Worked closely with the project team to gather user requirements and translate them into technical specifications.</li>
+                <li>Deployed app updates and new features based on user feedback, improving app performance and user engagement.</li>
+              </ul>
+            </div><!-- End Android Developer Item -->
+          </div>
+          
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="expertise" class="expertise section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Areas of Expertise</h2>
+      </div><!-- End Section Title -->
+    
+      <div class="container expertise-content" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <ul>
+              <li>Programming Languages Skills</li>
+              <li>Neural Network Architectures</li>
+              <li>Complex Problem Resolution</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <ul>
+              <li>Cross-functional Collaborations</li>
+              <li>Astute Communications</li>
+              <li>Software Development</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <ul>
+              <li>Data Analysis & Modelling</li>
+              <li>Project Management</li>
+              <li>Time Management</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    </section><!-- /Areas of Expertise Section -->
+    
+
+    <!-- Key Projects Section -->
+<section id="key-projects" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Projects</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- Project 1: Traffic Control for Emergency Vehicles -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon flex-shrink-0"><i class="bi bi-truck"></i></div>
+        <div>
+          <h4 class="title"><a href="traffic-control-details.html" class="stretched-link">Assist Emergency Vehicles on Intersection using Reinforcement Learning</a></h4>
+        </div>
+      </div><!-- End Project Item -->
+
+      <!-- Project 2: Landscape Analyzer -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon flex-shrink-0"><i class="bi bi-diagram-3"></i></div>
+        <div>
+          <h4 class="title"><a href="landscape-analyzer-details.html" class="stretched-link">Landscape Analyzer</a></h4>
+          <p class="description">Data Transformation from SAP to LeanIX</p>
+        </div>
+      </div><!-- End Project Item -->
+
+      <!-- Project 3: Application Integration Graph -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon flex-shrink-0"><i class="bi bi-graph-up-arrow"></i></div>
+        <div>
+          <h4 class="title"><a href="integration-graph-details.html" class="stretched-link">Application Integration Graph (LeanIX)</a></h4>
+          <p class="description">Visualization Graph in LeanIX</p>
+        </div>
+      </div><!-- End Project Item -->
+
+      <!-- Project 4: Aeronautical Drone and Robot -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon flex-shrink-0"><i class="bi bi-airplane"></i></div>
+        <div>
+          <h4 class="title"><a href="drone-robot-details.html" class="stretched-link">Aeronautical Drone and Robot</a></h4>
+          <p class="description">Simulation in ROS Gazebo</p>
+        </div>
+      </div><!-- End Project Item -->
+
+      <!-- Project 5: Weather Data Analysis -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon flex-shrink-0"><i class="bi bi-cloud-sun"></i></div>
+        <div>
+          <h4 class="title"><a href="weather-analysis-details.html" class="stretched-link">Weather Data Analysis Using Machine Learning</a></h4>
+          <p class="description">Predict Weather Forecast with different ML Algorithms</p>
+        </div>
+      </div><!-- End Project Item -->
+
+      <!-- Project 6: Viva Calculation Service -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-calculator"></i></div>
+        <div>
+          <h4 class="title"><a href="viva-calculation-details.html" class="stretched-link">Viva Calculation Service</a></h4>
+          <p class="description">Data transfer within process and Interface factsheet</p>
+        </div>
+      </div><!-- End Project Item -->
+
+      <!-- Additional Projects -->
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-chat-dots"></i></div>
+        <div>
+          <h4 class="title"><a href="chatbot-assistant-details.html" class="stretched-link">Chatbot Assistant</a></h4>
+          <p class="description">Advanced chatbot assistant with NLP capabilities</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-phone"></i></div>
+        <div>
+          <h4 class="title"><a href="patient-profile-details.html" class="stretched-link">Patient Profile Android Application</a></h4>
+          <p class="description">Application for managing patient profiles on Android</p>
+        </div>
+      </div><!-- End Service Item -->
+
+      <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon flex-shrink-0"><i class="bi bi-robot"></i></div>
+        <div>
+          <h4 class="title"><a href="digital-assistant-details.html" class="stretched-link">Digital Assistant</a></h4>
+          <p class="description">Digital assistant project with integrated AI features</p>
+        </div>
+      </div><!-- End Service Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Key Projects Section -->
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Vivek is an exceptional developer whose technical expertise and creative problem-solving have greatly advanced our company. His passion for innovative solutions and commitment to quality are truly impressive. Vivek inspires those around him with his helpful and motivating attitude.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Alexander Geurkov</h3>
+                <h4>IT Consultant</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Vivek always finds creative and professional solutions to every challenge, no matter how complex. He’s not only highly dependable and available whenever he's needed, but he also shares his knowledge generously, helping his colleagues grow. On top of that, Vivek brings a great sense of fun both in and out of projects, making him a joy to work with and an essential part of the team</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Moritz Weinrich</h3>
+                <h4>IT Consultant</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call</h3>
+                  <p>+49 176-457-737-63</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>vivekrabadiya54@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48389.78314118045!2d9.1316248!3d51.3148546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bb3f4e9f7a6c1d%3A0x2f84633d58221747!2sKassel!5e0!3m2!1sen!2sde!4v1696364000000" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
+<script>
+  document.querySelector('.php-email-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    const formData = new FormData(this);
+    
+    fetch('forms/contact.php', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+      if (data.trim() === 'success') {
+        document.querySelector('.sent-message').style.display = 'block';
+        document.querySelector('.error-message').style.display = 'none';
+      } else {
+        document.querySelector('.error-message').style.display = 'block';
+        document.querySelector('.sent-message').style.display = 'none';
+      }
+    })
+    .catch(error => {
+      document.querySelector('.error-message').style.display = 'block';
+      document.querySelector('.sent-message').style.display = 'none';
+    });
+  });
+</script>
