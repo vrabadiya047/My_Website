@@ -461,51 +461,80 @@
 </section><!-- /Key Projects Section -->
 
 
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Testimonials</h2>
-  </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        
+      </div><!-- End Section Title -->
 
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row d-flex justify-content-center">
-      
-      <!-- Testimonial 1 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="testimonial-item text-center">
-          <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img img-fluid rounded-circle" alt="">
-          <p class="mt-3">
-            <i class="bi bi-quote quote-icon-left"></i>
-            Vivek is an exceptional developer whose technical expertise and creative problem-solving have greatly advanced our company. His passion for innovative solutions and commitment to quality are truly impressive.
-            <i class="bi bi-quote quote-icon-right"></i>
-          </p>
-          <h3>Alexander Geurkov</h3>
-          <h4>IT Consultant</h4>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Vivek is an exceptional developer whose technical expertise and creative problem-solving have greatly advanced our company. His passion for innovative solutions and commitment to quality are truly impressive. Vivek inspires those around him with his helpful and motivating attitude.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Alexander Geurkov</h3>
+                <h4>IT Consultant</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Vivek always finds creative and professional solutions to every challenge, no matter how complex. He’s not only highly dependable and available whenever he's needed, but he also shares his knowledge generously, helping his colleagues grow. On top of that, Vivek brings a great sense of fun both in and out of projects, making him a joy to work with and an essential part of the team</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Moritz Weinrich</h3>
+                <h4>IT Consultant</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </div><!-- End Testimonial 1 -->
 
-      <!-- Testimonial 2 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-        <div class="testimonial-item text-center">
-          <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img img-fluid rounded-circle" alt="">
-          <p class="mt-3">
-            <i class="bi bi-quote quote-icon-left"></i>
-            Vivek always finds creative and professional solutions to every challenge, no matter how complex. He’s highly dependable and always ready to share his knowledge generously.
-            <i class="bi bi-quote quote-icon-right"></i>
-          </p>
-          <h3>Moritz Weinrich</h3>
-          <h4>IT Consultant</h4>
-        </div>
-      </div><!-- End Testimonial 2 -->
+      </div>
 
-      <!-- Additional Testimonials -->
-      <!-- Add more testimonials in similar structure -->
-      
-    </div>
-  </div>
-
-</section>
+    </section><!-- /Testimonials Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
