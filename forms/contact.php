@@ -1,5 +1,5 @@
 <?php
-// Replace with your email
+
 $to = 'vivekrabadiya54@gmail.com';
 $subject = 'New Message from Contact Form';
 
