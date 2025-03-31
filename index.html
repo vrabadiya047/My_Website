@@ -26,6 +26,9 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
 
   
 </head>
@@ -70,11 +73,17 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+      <section id="hero-section" style="position: relative; width: 100%; min-height: 100vh; padding: 120px 0; overflow: hidden; background-color: #0e0e0e;">
+        <canvas id="ripple3d-canvas"
+  style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;"></canvas>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>Vivek Rabadiya</h2>
-        <p>I'm <span id="typed-text"></span></p>
+        <div id="hero-content" style="position: relative; z-index: 1; text-align: left; color: white; top: 40%;">
+          <h1 style="font-size: 4rem;">Vivek Rabadiya</h1>
+          <p>I'm <span id="typed-text"></span></p>
+        </div>
+      </section>
+
+        
       </div>
       
       <!-- Include Typed.js library -->
@@ -657,6 +666,86 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+<!-- Place before </body> -->
+<script type="module">
+  import * as THREE from 'https://unpkg.com/three@0.150.1/build/three.module.js';
+
+  const canvas = document.getElementById('ripple3d-canvas');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(window.devicePixelRatio);
+
+  const scene = new THREE.Scene();
+
+  const camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 100);
+  camera.position.set(-5, 4, 10); // Slight left offset
+  camera.lookAt(0, 2, 0); // Look toward center
+
+  // Lighting
+  const ambientLight = new THREE.AmbientLight(0x888888);
+  scene.add(ambientLight);
+
+  const light = new THREE.PointLight(0xffffff, 1);
+  light.position.set(10, 20, 10);
+  scene.add(light);
+
+  // Bubble setup
+  const bubbleCount = 250;
+  const bubbles = [];
+  const bubbleGeometry = new THREE.SphereGeometry(0.25, 32, 32);
+  const bubbleMaterial = new THREE.MeshPhongMaterial({
+    color: 0x66ccff,
+    transparent: true,
+    opacity: 0.5,
+    shininess: 100
+  });
+
+  for (let i = 0; i < bubbleCount; i++) {
+    const mesh = new THREE.Mesh(bubbleGeometry, bubbleMaterial);
+    mesh.position.set(
+      (Math.random() - 0.3) * 20, // Slight bias to right
+      Math.random() * 10,
+      (Math.random() - 0.5) * 20
+    );
+    mesh.scale.setScalar(0.5 + Math.random() * 1.5);
+    scene.add(mesh);
+    bubbles.push({
+      mesh,
+      speed: 0.01 + Math.random() * 0.015,
+      drift: 0.002 + Math.random() * 0.003,
+      driftPhase: Math.random() * Math.PI * 2
+    });
+  }
+
+  function animate(time) {
+    bubbles.forEach((b, i) => {
+      b.mesh.position.y += b.speed;
+      b.mesh.position.x += Math.sin(time * 0.001 + b.driftPhase) * b.drift;
+
+      if (b.mesh.position.y > 10) {
+        b.mesh.position.y = 0;
+        b.mesh.position.x = (Math.random() - 0.3) * 20;
+        b.mesh.position.z = (Math.random() - 0.5) * 20;
+      }
+    });
+
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+
+  window.addEventListener('resize', () => {
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    renderer.setSize(w, h);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+  });
+</script>
+
+
 
 </body>
 
