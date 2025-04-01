@@ -68,7 +68,7 @@
           <ol>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#key-projects">Key Projects</a></li>
-            <li class="current">Traffic Control for Emergency Vehicles</li>
+            <li class="current">Traffic Signal Controller for Emergency Vehicles</li>
           </ol>
         </nav>
       </div>
@@ -79,42 +79,62 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-8 offset-lg-2" data-aos="fade-up" data-aos-delay="200">
-            <h3><a href="https://elib.dlr.de/194292/" target="_blank">Assist Emergency Vehicles on Intersection Using Reinforcement Learning</a></h3>
+            <h3><a href="https://elib.dlr.de/194292/" target="_blank">Assist Emergency Vehicles on Intersections Using Reinforcement Learning</a></h3>
             <p class="fst-italic">
-              Emergency vehicles, like fire trucks and ambulances, play a critical role in responding to crises, where every second counts. In a real-world scenario, navigating through intersections poses a significant challenge, as emergency vehicle drivers must maneuver cautiously and alertly, which can delay their response time.
-            </p>
-            <p>This project explores innovative traffic control solutions that prioritize emergency vehicles through the power of machine learning, specifically reinforcement learning. By leveraging SUMO (Simulation of Urban Mobility) and microscopic traffic simulation, this project aims to create an environment where emergency vehicles can move quickly and safely, with minimal impact on other road users.</p>
-            <img src="assets/img/DLR.jpg" alt="Assist" class="img-fluid mb-4">
+              Emergency vehicles, like fire trucks and ambulances, play a critical role in responding to crises, where every second matters. In urban environments, navigating intersections is one of the most time-consuming and risky parts of their journey due to unpredictable traffic conditions.</p>
+            <p>This project explores AI-powered traffic control that prioritizes emergency vehicles using Reinforcement Learning (RL) and microscopic traffic simulation via SUMO (Simulation of Urban Mobility). The goal is to create smart intersections that allow emergency vehicles to move quickly, safely, and efficiently, while still minimizing disruption to regular traffic.<img src="assets/img/DLR.jpg" alt="Assist" class="img-fluid mb-4">
           
 
-            <h4>Key Challenges Addressed:</h4>
-            <ul>
-              <li><i class="bi bi-exclamation-circle"></i> Ensuring emergency vehicle prioritization at intersections</li>
-              <li><i class="bi bi-exclamation-circle"></i> Minimizing risks of sudden reactions by other road users</li>
-              <li><i class="bi bi-exclamation-circle"></i> Reducing traffic delays for both emergency and regular vehicles</li>
-            </ul>
+              <h4>Project Highlights:</h4>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Built a real-time AI-based traffic signal controller using reinforcement learning</li>
+                <li><i class="bi bi-check-circle"></i> Integrated SUMO simulation with Python backend and live WebSocket data streaming</li>
+                <li><i class="bi bi-check-circle"></i> Visualized emergency vehicle movement and signal states through a browser-based GUI</li>
+                <li><i class="bi bi-check-circle"></i> Improved emergency response times by 50–60% with minimal impact on regular traffic</li>
+                <li><i class="bi bi-check-circle"></i> Designed a scalable and modular architecture for future smart city integration</li>
+              </ul>
+              
 
-            <h4>Solution Overview:</h4>
-            <p>An AI-based signal controller dynamically adjusts traffic signals to give priority to emergency vehicles. Through Vehicle-to-Infrastructure (V2I) communication and reinforcement learning, the controller optimizes real-time traffic flow.</p>
-
-            <ul>
-              <li><i class="bi bi-check-circle"></i> Developed a custom AI environment for training</li>
-              <li><i class="bi bi-check-circle"></i> Implemented observation, action, and reward functions for precise control</li>
-              <li><i class="bi bi-check-circle"></i> Improved emergency vehicle travel time by 50-60%</li>
-            </ul>
-
-            <h4>Technologies & Tools:</h4>
+              <h4>Key Challenges Addressed:</h4>
+              <ul>
+                <li><i class="bi bi-exclamation-circle"></i> Ensuring emergency vehicle prioritization at intersections</li>
+                <li><i class="bi bi-exclamation-circle"></i> Minimizing risks of sudden reactions by other road users</li>
+                <li><i class="bi bi-exclamation-circle"></i> Reducing traffic delays for both emergency and regular vehicles</li>
+              </ul>
+              
+              <h4>Solution Overview:</h4>
 <ul>
-    <li><strong>Frontend:</strong> Matplotlib, Plotly (for visualizing simulation results and performance metrics)</li>
-    <li><strong>Backend:</strong> Python</li>
-    <li><strong>Machine Learning:</strong> TensorFlow, Keras, OpenAI Gym</li>
-    <li><strong>Simulation:</strong> SUMO (Simulation of Urban Mobility)</li>
-    <li><strong>Cloud:</strong> AWS (for model training and running simulations)</li>
+  <li><i class="bi bi-lightbulb"></i> Developed a reinforcement learning-based traffic light controller that adapts in real time</li>
+  <li><i class="bi bi-lightbulb"></i> Integrated SUMO for realistic microscopic traffic simulation</li>
+  <li><i class="bi bi-lightbulb"></i> Used TraCI API to control signal states and retrieve live vehicle data</li>
+  <li><i class="bi bi-lightbulb"></i> Designed a custom OpenAI Gym-compatible environment with observation, action, and reward logic</li>
+  <li><i class="bi bi-lightbulb"></i> Delivered browser-based visualization and live performance metrics via WebSocket streaming</li>
 </ul>
 
-            <h4>Impact and Future Potential:</h4>
-            <p>This AI-driven solution has the potential to revolutionize urban traffic management by providing critical support for emergency response teams. Future applications could expand to cover more comprehensive smart city solutions, enhancing safety and efficiency across urban environments.</p>
-          </div>
+
+
+            
+<h4>Technologies & Tools:</h4>
+<ul>
+  <li><i class="bi bi-window-sidebar"></i> <strong>Frontend:</strong> Plotly.js, Matplotlib (for 2D visual metrics), Three.js (for future 3D)</li>
+  <li><i class="bi bi-code-slash"></i> <strong>Backend:</strong> Python (Flask or FastAPI), WebSocket (Socket.IO), TraCI</li>
+  <li><i class="bi bi-robot"></i> <strong>Machine Learning:</strong> TensorFlow, Keras, OpenAI Gym</li>
+  <li><i class="bi bi-traffic-cone"></i> <strong>Simulation:</strong> SUMO (microscopic traffic simulation), SUMO-GUI, TraCI</li>
+  <li><i class="bi bi-cloud-arrow-up"></i> <strong>Cloud & Training:</strong> AWS EC2, Docker (for training & remote simulation)</li>
+</ul>
+
+            
+
+<h4>Key Features:</h4>
+<ul>
+  <li><i class="bi bi-stars"></i> <strong>AI-Based Signal Controller:</strong> RL-based traffic light system that adapts in real time</li>
+  <li><i class="bi bi-stars"></i> <strong>Emergency Vehicle Detection:</strong> Identifies and prioritizes emergency units dynamically</li>
+  <li><i class="bi bi-stars"></i> <strong>Simulation-Driven Learning:</strong> Trained in a SUMO environment for real-world scalability</li>
+  <li><i class="bi bi-stars"></i> <strong>Performance Metrics Panel:</strong> Visual dashboard showing wait times, rewards, episode history</li>
+  <li><i class="bi bi-stars"></i> <strong>Modular Design:</strong> Easily expandable to include new intersections, traffic policies, or V2X data</li>
+  <li><i class="bi bi-stars"></i> <strong>Cross-Platform GUI:</strong> Runs in any modern browser with no special install required</li>
+</ul>
+</div>
         </div>
       </div>
     </section>
