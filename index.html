@@ -7,6 +7,8 @@
   <title>Vivek Rabadiya - Personal Site</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta http-equiv="Cache-Control" content="no-store" />
+
 
   <!-- Favicons -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -72,9 +74,20 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <section id="hero-section" style="position: relative; width: 100%; min-height: 100vh; padding: 120px 0; overflow: hidden; background-color: #0e0e0e;">
-        <canvas id="ripple3d-canvas"
-  style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:0;"></canvas>
+      <section id="hero-section" style="
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 120px 0;
+  overflow: hidden;
+  background-image: url('assets/img/bc_image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+">
+
+        
+        
 
         <div id="hero-content" style="position: relative; z-index: 1; text-align: left; color: white; top: 40%;">
           <h1 style="font-size: 4rem;">Vivek Rabadiya</h1>
@@ -91,7 +104,7 @@
       <script>
         // Initialize Typed.js
         var typed = new Typed('#typed-text', {
-          strings: ['FullStack Engineer',' Software Engineer'],
+          strings: ['Full-Stack Software Engineer'],
           typeSpeed: 200, // Speed of typing
           backSpeed: 50, // Speed of backspacing
           startDelay: 100, // Delay before typing starts
@@ -229,7 +242,7 @@
         <div class="tools-list">
           <span>• Node.js </span>
           <span>• Vue.Js </span>
-          <span>• Angular.js </span>
+          <span>• React </span>
           <span>• Django </span>
           <span>• D3.js </span>
           <span>• three.js </span>
@@ -237,7 +250,7 @@
           <span>• Babylon.js </span>
           <span>• Pandas  </span>
           <span>• Numpy </span>
-          <span>• NLP </span>
+          <span>• NLP </span><span>• PostgreSQL </span>
           <span>• GraphQL </span>
           <span>• RestfulAPI </span>
           <span>• Matplotlib </span>
@@ -614,7 +627,7 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form action="https://formspree.io/f/xanoydzl" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -667,7 +680,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -763,27 +775,30 @@
 </body>
 
 </html>
-
 <script>
-  document.querySelector('.php-email-form').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default form submission
-    const formData = new FormData(this);
-    
-    fetch('forms/contact.php', {
+  const form = document.querySelector('.php-email-form');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    fetch(form.action, {
       method: 'POST',
-      body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-      if (data.trim() === 'success') {
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
         document.querySelector('.sent-message').style.display = 'block';
         document.querySelector('.error-message').style.display = 'none';
+        form.reset();
       } else {
-        document.querySelector('.error-message').style.display = 'block';
-        document.querySelector('.sent-message').style.display = 'none';
+        return response.json().then(data => {
+          throw new Error(data.error || "Something went wrong");
+        });
       }
-    })
-    .catch(error => {
+    }).catch(error => {
+      document.querySelector('.error-message').innerHTML = error.message;
       document.querySelector('.error-message').style.display = 'block';
       document.querySelector('.sent-message').style.display = 'none';
     });
