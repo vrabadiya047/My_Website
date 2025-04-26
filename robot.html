@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Details - Landscape Analyzer</title>
+  <meta content="Project details for Landscape Analyzer: Data Transformation from SAP to LeanIX" name="description">
+  <meta content="Landscape Analyzer, SAP, LeanIX, Data Transformation" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts and Vendor CSS Files -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- Header Section -->
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.png" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Vivek Rabadiya</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://github.com/vrabadiya047" class="github"><i class="bi bi-github"></i></a>
+      <a href="http://www.linkedin.com/in/vivekrabadiya" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#skills"><i class="bi bi-bar-chart navicon"></i> Skills</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#expertise"><i class="bi bi-images navicon"></i> Areas of Expertise</a></li>
+        <li><a href="index.html#key-projects"><i class="bi bi-hdd-stack navicon"></i> Key Projects</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Project Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#key-projects">Key Projects</a></li>
+            <li class="current">Web-Based GUI for Simulated Robot Control and Monitoring</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
+    <!-- Project Details Section -->
+    <section id="project-details" class="project-details section">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8 offset-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <h3>Web-Based GUI for Simulated Robot Control and Monitoring</h3>
+            <p class="fst-italic">
+              To develop a web-based graphical user interface that allows users to monitor and control a simulated mobile robot in real-time using ROS and Gazebo. The interface enables visualization of sensor data, remote control commands, and robot state information through a browser, making it accessible and user-friendly. </p>
+            
+            <h4>Project Highlights:</h4>
+            <ul>
+              <li><i class="bi bi-exclamation-circle"></i> Built a responsive, browser-based UI to control a robot simulated in Gazebo</li>
+              <li><i class="bi bi-exclamation-circle"></i> Enabled real-time communication between ROS and the web using WebSockets</li>
+              <li><i class="bi bi-exclamation-circle"></i> Visualized live data streams like camera feed, LIDAR, and robot position</li>
+              <li><i class="bi bi-exclamation-circle"></i> Designed the interface to support both simulated and real robots</li>
+            </ul>
+
+            <h4>Technology & Methodology:</h4>
+            <ul>
+            <li><strong>Frontend:</strong> HTML, CSS, JavaScript, roslibjs, ros3djs, ros2djs, Plotly.js</li>
+            <li><strong>Backend:</strong> Python, C++</li>
+            <li><strong>WebSocket Bridge</strong> rosbridge_server, web_video_server</li>
+            <li><strong>Robot Description:</strong> URDF, Xacro, SDF</li>
+            
+          </ul>
+            <h4>Key Features:
+            </h4>
+            <ul>
+              <li><strong>Real-Time Teleoperation:</strong> Send movement commands directly from the browser using virtual joystick or keyboard</li>
+              <li><strong>Sensor Streaming:</strong>Visualize camera feed (via MJPEG), laser scan data, and robot state in real time</li>
+              <li><strong>2D/3D Visualization</strong> Display robot pose and map overlays using ros3djs</li>
+              <li><strong>Cross-Platform Access:</strong> Works on any device with a browser and network access</li>
+              <li><strong>Modular Design:</strong> Easily extendable to support additional sensors or actions</li>
+              
+            </ul>
+            <h4>Testing Strategy:</h4>
+<ul>
+  <li><strong>Simulation Testing:</strong> Simulated various environments and obstacle scenarios in Gazebo</li>
+  <li><strong>Data Verification:</strong> Used ROS bags for data replay and GUI stress testing</li>
+  <li><strong>Performance Evaluation:</strong> Verified topic communication using rostopic echo and rqt_graph</li>
+  <li><strong>Frontend Testing:</strong> Measured latency of data updates and control responses under different network conditions</li>
+  
+</ul>
+<h4>Results & Impact:</h4>
+<ul>
+  <li><strong>Accessible Simulation:</strong> Created a fully functional web GUI for simulated robots with real-time feedback</li>
+  <li><strong>Improved User Interaction:</strong> Improved accessibility for users who don't have ROS installed locally</li>
+  <li><strong>Reduced Debugging Time:</strong> Reduced development and debugging time through clean, visual feedback</li>
+  <li><strong>Scalable Architecture:</strong> Established a flexible base to integrate with real robots later without major frontend changes</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
