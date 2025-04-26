@@ -1,0 +1,30 @@
+{
+  "name": "my_website_backend",
+  "version": "1.0.0",
+  "description": "Backend server for contact form to Supabase",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vrabadiya047/My_Website.git"
+  },
+  "keywords": [
+    "backend",
+    "express",
+    "supabase",
+    "contact-form"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "pg": "^8.15.6"
+  }
+}
