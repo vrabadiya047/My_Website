@@ -1,2 +1,12 @@
-.env
+# Node modules (always ignore node_modules)
 node_modules/
+
+# Environment variables (secrets)
+.env
+
+# Logs (optional, if you generate server logs)
+*.log
+
+# Optional - OS or editor stuff
+.DS_Store
+.vscode/
